@@ -1,0 +1,219 @@
+.bg {
+    background-image: url('bg.jpg');
+    background-size: 100% auto;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    width: 100%; 
+    height: 55vh;  
+    position: relative;
+}
+#id1{
+    color: white;
+    font-size: 25px; 
+    text-align: left;
+    font: weight 400px;
+    letter-spacing: 2px;
+    padding-left: 50px ;
+    padding-top: 20px;
+    
+}
+#Stat {
+    position: absolute;
+    top: 55%;  
+    left: 4%;   
+    padding: 10px 35px;
+    font-size: 22px;
+    border-radius: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-style: normal;
+    background-color: rgba(159, 163, 168, 0.7);
+}
+
+.card{
+    position: absolute;
+    top: 98%;
+    left: 1%; 
+    cursor: pointer;
+}
+.col-md-2{
+    margin-right: 30px;
+}
+.container{
+    position: absolute;
+    left:5%;
+}
+
+.bg h4 {
+    margin-top: 70px; 
+    margin-bottom: 30px; 
+    font-size: 40px; 
+    font-weight: 600; 
+    color: white;
+    position: absolute;
+    top: 5%;  
+    left: 75%; 
+}
+
+#nav{
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+
+#bar{
+    background-color: white;
+    color: black;
+    box-shadow: 2px;
+    border: 1px solid rgb(227, 223, 223);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: left;
+}
+#bar:hover {
+    background-color: rgba(236, 237, 239, 0.7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+
+
+.nav-item .nav-link i{
+    padding-right: 10px;
+    font-size: 27px;
+}
+.nav-link span{
+    margin-right: 30px;
+}
+#search{
+    margin-left: 80px;
+    padding: 20px 80px;
+    background-color: rgb(224, 156, 31);
+    color: white;
+}
+#search:hover{
+    color: black;
+}
+
+/* General card styling */
+/* General card styling */
+.card {
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .img-container {
+    position: relative;
+  }
+  
+  .img-container:hover .card-img-top {
+    opacity: 0.8;
+  }
+  
+  /* Checkbox container */
+  .checkbox-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  /* Show checkbox on hover */
+  .img-container:hover .checkbox-container {
+    display: inline-block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Checkbox input */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Neon checkbox design */
+  .checkmark {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #00ff00;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.6), 0 0 15px rgba(0, 255, 0, 0.4);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Neon hover effect */
+  .checkmark:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 25px rgba(0, 255, 0, 0.6);
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #00ff00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 30px rgba(0, 255, 0, 0.8);
+  }
+  
+  /* Checkmark tick */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 8px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Card body and title styling */
+  .card-body {
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

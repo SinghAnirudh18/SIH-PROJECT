@@ -1,0 +1,231 @@
+.bg {
+    background-image: url('c_bg.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+/* Semi-transparent overlay */
+.bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha for desired transparency */
+    z-index: 1;  /* Ensure overlay is above background but below the circle */
+}
+
+/* Circle image on top with border */
+.circle {
+    position: absolute;
+    top: 50%;            
+    left: 20%;           
+    transform: translate(-50%, -50%);
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image inside the circle stays within the circular bounds */
+    border: 5px solid #c59393;  /* Add border around the circle (adjust color and thickness) */
+    z-index: 2;  /* Higher than overlay */
+}
+
+.circle img {
+    width: 100%;    /* Make the image fill the circle */
+    height: 100%;   /* Keep the aspect ratio correct inside the circle */
+    object-fit: cover; /* Ensures the image fits well within the circular boundary */
+}
+
+/* Position h1 and p on the right, above all other elements */
+.bg h1, .bg p {
+    position: absolute;   /* Adjust distance from the right edge */
+    z-index: 3;     /* Ensure it's above everything else */
+    color: rgb(17, 17, 109);    /* Adjust text color as needed */
+    
+}
+
+/* Space between h1 and p */
+.bg h1 {
+    top: 3vh;      /* Adjust the vertical position of h1 */
+    right:112vh;
+}
+
+.bg p {
+    top: 12vh;      /* Adjust the vertical position of p (below h1) */
+    color: black;   /* Adjust text color for p */
+    left: 71vh;
+}
+#down{
+    position: relative;
+}
+#butt{
+    background-color:#FF6F61;
+    color:#FFFFFF;
+    border-radius: 10%;
+    padding: 1vh 7vh;
+    position: absolute;
+    top:4vh;
+    left:15vh;
+    font-weight: bold;
+}
+#butt:hover{
+    background-color: #800000;
+}
+#butt1:hover{
+    background-color: #800000;
+}
+#butt2:hover{
+    background-color: #800000;
+}
+#butt3:hover{
+    background-color: #800000;
+}
+
+#butt2{
+    background-color: #FF6F61;
+    color:#FFFFFF;
+    border-radius: 10%;
+    padding: 1vh 7vh;
+    position: absolute;
+    top:4vh;
+    left: 65vh;
+    font-weight: bold;
+}
+#butt3{
+    background-color: #FF6F61;
+    color:#FFFFFF;
+    border-radius: 10%;
+    padding: 1vh 7vh;
+    position: absolute;
+    top:4vh;
+    left: 115vh;
+    font-weight: bold;
+}
+#butt1{
+    background-color: #FF6F61;
+    color:#FFFFFF;
+    border-radius: 10%;
+    padding: 1vh 7vh;
+    position: absolute;
+    top:4vh;
+    left:165vh;
+    font-weight: bold;
+}
+#heading1,#places1{
+    top:15vh;
+    left:15vh;
+    padding-right: 3vh;
+}
+
+#heading2,#places2{
+    top:15vh;
+    left:43vh;
+    padding-right: 5vh;
+}
+#heading1,#heading2,#heading3,#heading4{
+    background-color: #F39C12;
+    color:#4D2C20;
+    font-weight:bolder;
+}
+#heading1:hover{
+    background-color: #34495E;
+    color:#FFFFFF;
+}
+#heading2:hover{
+    background-color: #34495E;
+    color:#FFFFFF;
+}
+#heading3:hover{
+    background-color: #34495E;
+    color:#FFFFFF;
+}
+#heading4:hover{
+    background-color: #34495E;
+    color:#FFFFFF;
+}
+#heading3,#places3{
+    top:15vh;
+    left:69vh;
+    padding-right: 5vh ;
+}
+#heading4,#places4{
+    top:15vh;
+    left:95vh;
+    padding-right: 3vh;
+}
+#places1,#places2,#places3,#places4{
+    background-color: #2C3E50;
+    color:#FFFFFF;
+}
+#places1:hover{
+    background-color: #F1C40F;
+    color: #34495E;
+}
+#places2:hover{
+    background-color: #F1C40F;
+    color: #34495E;
+}
+#places3:hover{
+    background-color: #F1C40F;
+    color: #34495E;
+}
+#places4:hover{
+    background-color: #F1C40F;
+    color: #34495E;
+}
+p{
+    margin-right: 7vh;
+}
+.star-rating {
+    font-size: 2.5vh;
+    color: gold;
+    z-index: 3;
+    position: absolute;
+    left:98vh;
+    top:4.8vh;
+}
+
+.star-rating i {
+    padding: 0 2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star-rating i:hover,
+.star-rating i:hover ~ i {
+    color: lightgray;
+}
+.ani1{
+    position: relative;
+    top:25vh;
+    left:175vh;
+}
+.btn-warning {
+    background-color: #28a745; /* Green base color */
+    color: white;
+    padding: 15px 60px; /* Wider padding for horizontal size */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease; /* Smooth transition */
+    letter-spacing: 2px; /* Spaced out text */
+    text-transform: uppercase;
+  }
+  
+  .btn-warning:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-warning:active {
+    transform: scale(1.05); /* Slight reduction when clicked */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  

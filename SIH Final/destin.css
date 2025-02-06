@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: #333;
+}
+
+/* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.image-slide {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-slide.active {
+    display: block;
+}
+
+/* Explore Section Styling */
+.explore-section {
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    margin: 0 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 25px;
+}
+
+.explore-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.explore-item:hover img {
+    transform: scale(1.1);
+}
+
+.explore-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.4em;
+    transition: background 0.3s ease;
+    font-weight: 500;
+}
+
+.explore-item:hover .explore-caption {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.explore-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .explore-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .explore-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .explore-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile devices */
+    }
+}
